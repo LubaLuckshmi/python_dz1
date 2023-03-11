@@ -6,4 +6,4 @@
 100 -> 1 (1 + 0 + 0) 
 """
 number = int(input("Введите трехзначное число: "))
-print(number, '->', number//100+number//10%10+number%10)
+print(number, '->', number//100+number//10 % 10+number % 10)

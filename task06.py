@@ -12,11 +12,14 @@
 123456 -> no
 """
 
-ticket = input("Введите номер билета: ")
-res1 = 0
-res2 = 0
-for i in range(len(ticket)//2):
-    res1 += int(ticket[i])
-    res2 += int(ticket[len(ticket)//2 + i])
-luck = res1 == res2
-print(ticket, '->', luck)
+ticket = input("Введите 6-значный номер билета: ")
+if len(ticket) != 6:
+    print('Ошибка ввода числа')
+else:
+    res1 = 0
+    res2 = 0
+    for i in range(len(ticket)//2):
+        res1 += int(ticket[i])
+        res2 += int(ticket[len(ticket)//2 + i])
+    luck = res1 == res2
+    print(ticket, '->', luck)
