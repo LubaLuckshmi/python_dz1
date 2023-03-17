@@ -7,10 +7,10 @@
 Помогите Кате отгадать задуманные Петей числа.
 '''
 
-x = int(input("Введите сумму "))
-y = int(input("Введите произведение "))
-for i in range(x):
-    for j in range(y):
-        if x == i + j and y == i * j:
-            print(i, j)
-       
+s = int(input("Введите сумму "))
+p = int(input("Введите произведение "))
+for x in range(p):
+    for y in range(s):
+        if s == x + y and p == x * y:
+            print(x, y)
+            
