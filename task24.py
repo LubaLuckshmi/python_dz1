@@ -15,14 +15,14 @@
 перед некоторым кустом заданной во входном файле грядки.
 '''
 
-kust = int(input("Введите количество кустов на грядке: "))
-for _ in range(kust):
-    kust.append(int(input("Введите число ягод: ")))
+kust = []
+kust_len = int(input("Введите количество кустов: "))
+for _ in range(kust_len):
+    kust.append(int(input("Введите число ягод на кусте: ")))
 print(kust)  
-
 sum_max = 0
 
-for i in kust:
+for i in range(len(kust)-1):
     sum = kust[i]+kust[i+1]+ kust[i-1] 
     if sum > sum_max:
         sum_max = sum

@@ -20,6 +20,6 @@ print(input_list2)
 
 a = set(input_list1)
 b = set(input_list2)
-c = a.union(b)
+c = sorted(a.intersection(b))
 
 print(c)
