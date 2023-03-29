@@ -34,3 +34,26 @@ def rle(input_str):
 
 input_str = input("Введите стороку: ").upper()
 print(rle(input_str))
+
+'''
+def rle(some_str):
+res_list = []
+some_str += ' '
+temp_letter = some_str[0]
+count_letter = 1
+for ind in range(1, len(some_str)):
+if some_str[ind] == temp_letter:
+count_letter += 1
+else:
+if count_letter == 1:
+res_list.append(f'{temp_letter}')
+else:
+res_list.append(f'{temp_letter}{count_letter}')
+count_letter = 1
+temp_letter = some_str[ind]
+print(res_list)
+print(*res_list, sep='')
+
+
+rle('AAAABBBCCXYZDDDDEEEFFFAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBB')
+'''
